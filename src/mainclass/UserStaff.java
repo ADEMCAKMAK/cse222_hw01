@@ -15,12 +15,12 @@ import java.util.ArrayList;
 public class UserStaff extends UserAbstract {
 
     /**
-     * Constructor
-     * @param id
-     * @param password
-     * @param name
-     * @param surname
-     * @param status 
+     * Constructor 
+     * @param id specific code for user
+     * @param password enter number
+     * @param name first name
+     * @param surname last name
+     * @param status info status
      */
     public UserStaff(int id, int password, String name, String surname, boolean status) {
         super(id, password, name, surname, status);
@@ -28,8 +28,8 @@ public class UserStaff extends UserAbstract {
     
     /**
      * staff can be add a book in bookList
-     * @param bookList
-     * @param item
+     * @param bookList list of book
+     * @param item a book
      * @return process status
      */
     public boolean addBook(ArrayList<Book> bookList, Book item) throws NullPointerException
@@ -42,8 +42,8 @@ public class UserStaff extends UserAbstract {
     
     /**
      * staff can be remove a book in booklist
-     * @param bookList
-     * @param item
+     * @param bookList list of book
+     * @param item a book
      * @return process status
      */
     public boolean removeBook(ArrayList<Book> bookList, Book item) throws NullPointerException, Error
@@ -66,9 +66,9 @@ public class UserStaff extends UserAbstract {
     
     /**
      * staff can be add a user(student)
-     * @param userList
-     * @param item
-     * @return 
+     * @param userList list of user
+     * @param item a user
+     * @return status of process
      */
     public boolean addUser(ArrayList<UserLibrary> userList, UserLibrary item) throws NullPointerException
     {
@@ -79,9 +79,9 @@ public class UserStaff extends UserAbstract {
     
     /**
      * staff can be remove a user(student)
-     * @param userList
-     * @param item
-     * @return 
+     * @param userList list of user
+     * @param item a user
+     * @return status of process
      */
     public boolean removeUser(ArrayList<UserLibrary> userList, UserLibrary item) throws NullPointerException, Error
     {

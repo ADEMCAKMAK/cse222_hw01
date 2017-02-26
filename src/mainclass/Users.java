@@ -47,12 +47,12 @@ public class Users {
     }
 
     /**
-     * Constructor
-     * @param id
-     * @param password
-     * @param name
-     * @param surname
-     * @param status 
+     * Constructor 
+     * @param id specific code for user
+     * @param password enter number
+     * @param name first name
+     * @param surname last name
+     * @param status info status
      */
     public Users(int id, int password, String name, String surname, boolean status) {
         this.id = id;

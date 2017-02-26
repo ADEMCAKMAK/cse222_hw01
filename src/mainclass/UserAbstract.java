@@ -17,11 +17,11 @@ public abstract class UserAbstract extends Users implements SystemInterface {
     }
     /**
      * Constructor 
-     * @param id
-     * @param password
-     * @param name
-     * @param surname
-     * @param status 
+     * @param id specific code for user
+     * @param password enter number
+     * @param name first name
+     * @param surname last name
+     * @param status info status
      */
     public UserAbstract(int id, int password, String name, String surname, boolean status) {
         super(id, password, name, surname, status);
@@ -54,8 +54,8 @@ public abstract class UserAbstract extends Users implements SystemInterface {
     
     /**
      * borrow the book from the list
-     * @param bookList
-     * @param item
+     * @param bookList list of book
+     * @param item a book
      * @return result of borrow is success
      */
     public boolean borrowBook(ArrayList<Book> bookList, Book item) throws NullPointerException
@@ -79,8 +79,8 @@ public abstract class UserAbstract extends Users implements SystemInterface {
     
     /**
      * return the borrowed book
-     * @param bookList
-     * @param item
+     * @param bookList list of book
+     * @param item a book
      * @return result of process status
      */
     public boolean returnBook(ArrayList<Book> bookList, Book item)

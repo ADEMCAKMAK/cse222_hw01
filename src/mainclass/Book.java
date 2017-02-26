@@ -31,10 +31,10 @@ public class Book {
 
     /**
      * Constructor
-     * @param id
-     * @param name
-     * @param author
-     * @param status 
+     * @param id specific code for item
+     * @param name called name
+     * @param author who written item
+     * @param status status info
      */
     public Book(int id, String name, String author, boolean status) {
         this.id = id;
@@ -45,7 +45,7 @@ public class Book {
 
     /**
      * view the book is borrowed or not
-     * @return 
+     * @return book status
      */
     public boolean isStatus() {
         return status;
@@ -53,7 +53,7 @@ public class Book {
 
     /**
      * if the book is valid, borrow it and set status
-     * @param status 
+     * @param status setting current status
      */
     public void setStatus(boolean status) {
         this.status = status;

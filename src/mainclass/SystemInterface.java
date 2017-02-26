@@ -14,8 +14,8 @@ public interface SystemInterface {
 
     /**
      * check the valid access
-     * @param id
-     * @param password
+     * @param id user id
+     * @param password user password
      * @return id and password is right return true otherwise false
      */
     public boolean logIn(int id, int password);
